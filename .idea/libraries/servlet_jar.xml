@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="servlet.jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/My12306/WEB-INF/classes/com/neuedu/servlet.jar.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

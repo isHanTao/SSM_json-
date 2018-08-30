@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ht.mapper.TeacherMapper">
+
+    <select id="getPasswordById" resultType="java.lang.String">
+        select password from teacher where id=#{id}
+    </select>
+    <select id="getTeacherById" resultType="com.ht.bean.Teacher">
+        SELECT * FROM teacher WHERE id=#{id};
+    </select>
+
+    <update id="update" parameterType="com.ht.bean.Teacher">
+        update teacher set name=#{name},sex=#{sex},qqNumber=#{qqNumber},password=#{password},classId=#{classId} where id=#{id}
+    </update>
+
+</mapper>
